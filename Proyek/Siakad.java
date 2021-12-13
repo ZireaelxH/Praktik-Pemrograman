@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.management.JMRuntimeException;
-
 public class Siakad {
     Mahasiswa[] mahasiswa = new Mahasiswa[1000];
     private int jumlahData = 0;
