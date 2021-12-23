@@ -1,3 +1,10 @@
+// Nama     : Hasto Rostamhadi 
+// NIM      : 21537144023
+// Kelas    : J
+// Prodi    : Teknologi Informasi
+// Tahun    : 2021
+
+
 import java.util.Scanner;
 
 public class Siakad {
@@ -149,11 +156,15 @@ public class Siakad {
 
     public void ratarataIPK() {
         double totalNilai = 0.0;
-        for (int i = 0; i < jumlahData; i++) {
-            totalNilai += mahasiswa[i].getIPK();
-        }
+        if (jumlahData == 0) {
+            System.out.println("Belum ada data IPK Mahasiswa");
+        } else {
+            for (int i = 0; i < jumlahData; i++) {
+                totalNilai += mahasiswa[i].getIPK();
+            }
 
-        double rataRata = totalNilai / jumlahData;
-        System.out.println("Rata-rata IPK Mahasiswa = " + rataRata);
+            double rataRata = totalNilai / jumlahData;
+            System.out.println("Rata-rata IPK Mahasiswa = " + rataRata);
+        }
     }
 }
